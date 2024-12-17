@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота №1</title>
+</head>
+<body>
+    <header>
+        <h1>Лабораторна робота №1</h1>
+        <h2>Демонстрація елементів HTML</h2>
+    </header>
+
+    <main>
+        <!-- Оформлений текст -->
+        <section>
+            <h3>Оформлений текст</h3>
+            <p>Цей текст демонструє <b>напівжирний шрифт</b>, <i>курсив</i>, 
+            <sub>підрядкові</sub> та <sup>надрядкові</sup> елементи. Для вставки спеціальних символів використовуємо <b>&amp;</b>, <b>&lt;</b>, <b>&gt;</b>, а також стрілки: <b>&larr;</b>, <b>&rarr;</b>.</p>
+        </section>
+
+        <!-- Список визначень -->
+        <section>
+            <h3>Список дисциплін 3-го курсу</h3>
+            <dl>
+                <dt>Функціональне програмування</dt>
+                <dd>Опис: дисципліна вивчає основи функціонального підходу до програмування.</dd>
+
+                <dt>Моделювання систем</dt>
+                <dd>Опис: методи моделювання складних систем.</dd>
+
+                <dt>Архітектура комп'ютера</dt>
+                <dd>Опис: вивчення будови та принципів роботи комп'ютера.</dd>
+
+                <dt>Системне програмне забезпечення</dt>
+                <dd>Опис: знайомство з ОС та іншими системними програмами.</dd>
+
+                <dt>Internet-технології</dt>
+                <dd>Опис: технології роботи в Інтернеті.</dd>
+
+                <dt>Комп'ютерна схемотехніка</dt>
+                <dd>Опис: принципи роботи цифрових схем.</dd>
+
+                <dt>Психологія управління</dt>
+                <dd>Опис: управління людьми та командами.</dd>
+            </dl>
+        </section>
+
+        <!-- Таблиця -->
+        <section>
+            <h3>Табличне представлення періодичної системи</h3>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Номер</th>
+                        <th>Елемент</th>
+                        <th>Символ</th>
+                        <th>Атомна маса</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Гідроген</td>
+                        <td>H</td>
+                        <td>1.008</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Гелій</td>
+                        <td>He</td>
+                        <td>4.0026</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Літій</td>
+                        <td>Li</td>
+                        <td>6.94</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Форма -->
+        <section>
+            <h3>Форма введення інформації про комплектуючі ПК</h3>
+            <form action="#" method="post">
+                <label for="cpu">Процесор:</label>
+                <input type="text" id="cpu" name="cpu"><br>
+
+                <label for="gpu">Відеокарта:</label>
+                <input type="text" id="gpu" name="gpu"><br>
+
+                <label for="ram">Оперативна пам'ять:</label>
+                <input type="text" id="ram" name="ram"><br>
+
+                <label>
+                    <input type="checkbox" name="ssd"> Наявність SSD
+                </label><br>
+
+                <label>
+                    <input type="radio" name="cooling" value="air"> Повітряне охолодження
+                </label>
+                <label>
+                    <input type="radio" name="cooling" value="water"> Водяне охолодження
+                </label><br>
+
+                <label for="brand">Виробник:</label>
+                <select id="brand" name="brand">
+                    <option value="intel">Intel</option>
+                    <option value="amd">AMD</option>
+                    <option value="nvidia">NVIDIA</option>
+                </select><br>
+
+                <button type="submit">Надіслати</button>
+            </form>
+        </section>
+
+        <!-- Посилання та зображення -->
+        <section>
+            <h3>Карта зображень</h3>
+            <img src="university.jpg" alt="Університет" usemap="#imagemap">
+            <map name="imagemap">
+                <area shape="rect" coords="0,0,100,100" href="https://university.edu" alt="Сайт університету">
+                <area shape="circle" coords="150,150,50" href="https://faculty.edu" alt="Сайт кафедри">
+                <area shape="poly" coords="200,200,250,250,200,300" href="https://schedule.edu" alt="Розклад">
+            </map>
+        </section>
+    </main>
+
+    <footer>
+        <p>Автор: [Ваше Ім'я]. Всі права захищено. 2024</p>
+    </footer>
+</body>
+</html>
